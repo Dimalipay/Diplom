@@ -10,7 +10,7 @@ class GUI(QMainWindow):
     def __init__(self):
         super(GUI, self).__init__()
 
-        self.agegenderemotion_process =
+        self.agegenderemotion_process = subprocess.Popen(['python', 'agegenderemotion_webcam.py'])
 
         # Set window icon
         self.setWindowIcon(QIcon('images/logo_1.ico'))
